@@ -16,8 +16,9 @@ public class Exam {
 //        st.displayStudentInfo();                 //if we use constructor
 
         ApplicationContext context = new ClassPathXmlApplicationContext("beans-di.xml");
-//        Student sup = context.getBean("supriya", Student.class);
-//        sup.displayStudentInfo();
+        
+       Student sup = context.getBean("supriya", Student.class);
+       sup.displayStudentInfo();
 //
 //        Student vij = context.getBean("vijaya", Student.class);
 //        vij.displayStudentInfo();
@@ -25,8 +26,10 @@ public class Exam {
         Student jay = context.getBean("jayesh", Student.class);
         jay.displayStudentInfo();
 
-        Student gan = context.getBean("ganesh", Student.class);
-        gan.displayStudentInfo();
+        // Student gan = context.getBean("ganesh", Student.class);
+        // gan.displayStudentInfo();
+
+        
 
     }
 }
